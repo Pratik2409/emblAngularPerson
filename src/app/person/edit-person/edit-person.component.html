@@ -1,0 +1,36 @@
+<div class="col-md-6 user-container">
+    <h2 class="text-center">Edit User</h2>
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+
+     <div class="hidden">
+      <input type="text" formControlName="id" placeholder="id" name="id" class="form-control" id="id">
+     </div>
+
+      <div class="form-group">
+        <label for="first_name">First Name:</label>
+        <input formControlName="first_name" placeholder="First Name" name="first_name" class="form-control" id="first_name">
+      </div>
+  
+      <div class="form-group">
+        <label for="last_name">Last Name:</label>
+        <input formControlName="last_name" placeholder="Last name" name="last_name" class="form-control" id="last_name">
+      </div>
+  
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" formControlName="age" placeholder="age" name="age" class="form-control" id="age">
+      </div>
+
+      <div class="form-group">
+        <label for="favorite_colour">Favorite Colour:</label>
+        <input type="text" formControlName="favorite_colour" placeholder="Favorite Colour" name="favorite_colour" class="form-control" id="favorite_colour">
+      </div>
+  
+      <div class="form-group">
+        <label for="hobby">Hobby :</label>
+        <input type="text" formControlName="hobby" placeholder="Hobby Comma separated values" name="hobby" class="form-control" id="hobby">
+      </div>
+  
+      <button class="btn btn-success">Update</button>
+    </form>
+  </div>
